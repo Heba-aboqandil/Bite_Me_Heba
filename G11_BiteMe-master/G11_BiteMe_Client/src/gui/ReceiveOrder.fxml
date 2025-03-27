@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="746.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ReceiveOrderController">
+   <children>
+      <Label alignment="CENTER" layoutX="-3.0" layoutY="56.0" prefHeight="30.0" prefWidth="1324.0" text="User Orders">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Button layoutX="616.0" layoutY="597.0" mnemonicParsing="false" onAction="#getBackBtn" prefHeight="27.0" prefWidth="88.0" text="Back" />
+      <TableView fx:id="orderTableView" layoutX="100.0" layoutY="150.0" prefHeight="346.0" prefWidth="1118.0">
+         <columns>
+            <TableColumn fx:id="orderIdCol" prefWidth="50.666717529296875" text="OrderID" />
+            <TableColumn fx:id="dateOfOrderCol" prefWidth="93.99996948242188" text="Date Of Order" />
+            <TableColumn fx:id="timeOfOrderCol" prefWidth="87.0" text="Time Of Order" />
+            <TableColumn fx:id="restaurantIdCol" prefWidth="75.0" text="Restaurant" />
+            <TableColumn fx:id="pickUpTypeCol" prefWidth="90.44451904296875" text="Pick Up Type" />
+            <TableColumn fx:id="locationCol" prefWidth="106.55548095703125" text="Location" />
+            <TableColumn fx:id="statusCol" prefWidth="88.66668701171875" text="Status" />
+            <TableColumn fx:id="requestedTimeCol" prefWidth="151.66668701171875" text="Requested Time" />
+            <TableColumn fx:id="requestedDateCol" prefWidth="153.0" text="Requested Date" />
+            <TableColumn fx:id="etaCol" prefWidth="66.4444580078125" text="ETA" />
+            <TableColumn fx:id="durationCol" prefWidth="95.5555419921875" text="Duration" />
+            <TableColumn fx:id="costCol" prefWidth="61.5555419921875" text="Cost" />
+         </columns>
+      </TableView>
+      <Button fx:id="receiveButton" layoutX="532.0" layoutY="533.0" mnemonicParsing="false" onAction="#updateStatus" prefHeight="45.0" prefWidth="250.0" text="Confirm Reception">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

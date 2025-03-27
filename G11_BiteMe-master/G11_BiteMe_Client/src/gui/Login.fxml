@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.LoginController">
+   <children>
+      <Button id="btnExit" fx:id="btnExit" layoutX="208.0" layoutY="261.0" mnemonicParsing="false" onAction="#getBackBtn" text="Exit" />
+      <Button id="btnStudentInfo" fx:id="btnLogin" layoutX="127.0" layoutY="199.0" mnemonicParsing="false" onAction="#login" text="Login" />
+      <Label layoutX="11.0" layoutY="53.0" text="Username:" />
+      <TextField fx:id="Usernametxt" layoutX="76.0" layoutY="50.0" />
+      <Label layoutX="11.0" layoutY="100.0" text="Password:" />
+      <TextField fx:id="Passwordtxt" layoutX="76.0" layoutY="96.0" />
+      <ComboBox fx:id="UserTypecb" layoutX="75.0" layoutY="138.0" prefWidth="150.0" />
+      <Label layoutX="13.0" layoutY="142.0" text="Type:" />
+      <Label layoutX="129.0" layoutY="14.0" text="Login" />
+      <Label fx:id="messagelbl" alignment="CENTER" contentDisplay="CENTER" layoutX="75.0" layoutY="173.0" prefHeight="17.0" prefWidth="150.0" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

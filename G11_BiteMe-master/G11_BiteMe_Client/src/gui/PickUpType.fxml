@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="855.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.PickPickUpTypeController">
+   <children>
+      <Button id="btnExit" fx:id="btnExit" layoutX="640.0" layoutY="794.0" mnemonicParsing="false" onAction="#getBackBtn" text="Back" />
+      <Label layoutX="503.0" layoutY="36.0" text="Pick Up Type:">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnNext" layoutX="618.0" layoutY="736.0" mnemonicParsing="false" onAction="#getNextBtn" prefHeight="39.0" prefWidth="85.0" text="Next">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="493.0" layoutY="174.0" text="Please choose a pickup type:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" layoutX="476.0" layoutY="218.0" spacing="20.0">
+         <children>
+            <ToggleButton fx:id="ToggleBtnTakeAway" onAction="#handleToggleButtonAction">
+               <graphic>
+                  <ImageView fx:id="imageViewTakeAway" fitHeight="150.0" fitWidth="150.0">
+                     <image>
+                        <Image url="@../images/delivery-man.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <toggleGroup>
+                  <ToggleGroup fx:id="photoToggleGroup" />
+               </toggleGroup>
+            </ToggleButton>
+            <ToggleButton fx:id="ToggleBtnDelivery" onAction="#handleToggleButtonAction" toggleGroup="$photoToggleGroup">
+               <graphic>
+                  <ImageView fx:id="ImageViewDelivery" fitHeight="150.0" fitWidth="150.0">
+                     <image>
+                        <Image url="@../images/fast-delivery.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
+         </children>
+      </HBox>
+      <TextField fx:id="idTimetxtField" layoutX="583.0" layoutY="480.0" promptText="HH:MM" />
+      <Label layoutX="638.0" layoutY="463.0" text="Time:" />
+      <Label layoutX="638.0" layoutY="516.0" text="Date:" />
+      <DatePicker fx:id="idDatePicker" layoutX="583.0" layoutY="533.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="idLocation" layoutX="583.0" layoutY="584.0" visible="false" />
+      <Label fx:id="lblLocation" layoutX="628.0" layoutY="567.0" text="Location:" visible="false" />
+      <Label layoutX="514.0" layoutY="376.0" text="TakeAway">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="703.0" layoutY="376.0" text="Delivery">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

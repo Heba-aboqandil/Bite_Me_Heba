@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="855.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CustomerHomePageController">
+   <left>
+      <VBox prefHeight="855.0" prefWidth="250.0" BorderPane.alignment="CENTER" />
+   </left>
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="114.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fx:id="imageUserimg" fitHeight="80.0" fitWidth="80.0" layoutX="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Downloads/pngwing.com%20(3).png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lblUsername" layoutX="10.0" layoutY="84.0" text="Hello">
+                           <font>
+                              <Font name="System Bold" size="23.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="114.0" prefWidth="1214.0">
+               <children>
+                  <Label prefHeight="82.0" prefWidth="603.0" text="Welcome to BiteMe">
+                     <font>
+                        <Font name="Calibri Bold" size="72.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="110.0" prefWidth="231.0">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnLogout" layoutX="-10.0" layoutY="34.0" mnemonicParsing="false" onAction="#getBackBtn" text="Logout">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </top>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="250.0" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <VBox prefHeight="641.0" prefWidth="738.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="652.0" prefWidth="815.0">
+               <children>
+                  <Button fx:id="btnOrderFood" alignment="CENTER" layoutX="329.0" layoutY="296.0" mnemonicParsing="false" onAction="#getOrderFoodBtn" text="Start Order">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnRecueveOrder" layoutX="342.0" layoutY="399.0" mnemonicParsing="false" onAction="#getRecieveOrderBtn" text="Recieve Order">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
