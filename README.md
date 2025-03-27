@@ -1,4 +1,4 @@
-# Bite Me 🍽️🚁
+# Bite Me 🍽️
 
 **Bite Me** is a distributed food ordering and delivery system developed in Java.  
 The project connects customers, restaurants, and a credit company through a user-friendly portal and uses an automated drone system to manage and deliver orders.
